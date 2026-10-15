@@ -1,1 +1,12 @@
+pluginManagement {
+    repositories {
+        // 添加阿里云镜像
+        maven { url 'https://maven.aliyun.com/repository/public' }
+        maven { url 'https://maven.aliyun.com/repository/gradle-plugin' }
+        maven { url 'https://maven.aliyun.com/repository/spring-plugin' }
+        // 保留原有的官方仓库作为备用
+        gradlePluginPortal()
+        mavenCentral()
+    }
+}
 rootProject.name = 'demo'
